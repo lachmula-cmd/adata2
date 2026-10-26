@@ -23,5 +23,6 @@ def gene_mean(adata, symbol):
     d = adata[:, symbol].X.toarray()
     return float(d.mean())
 
+
 def embedding(adata, key):
     return adata.obsm[key]
